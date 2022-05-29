@@ -26,6 +26,46 @@ code {
   gap: 1em;
 }
 
+.note.new{
+  background-color: rgb(160, 216, 242);
+
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(160, 216, 242);
+}
+
+textarea:focus{
+  outline: none;
+
+}
+
+
+
+.save {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.save:hover {
+	background-color:#f3d5f3;
+}
+.save:active {
+	position:relative;
+	top:1px;
+}
+
 .note{
   background-color: rgb(233, 245, 127);
   margin: 10px;
