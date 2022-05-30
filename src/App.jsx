@@ -25,6 +25,11 @@ function App() {
     id:nanoid(),
      text:"this is4 note",
      date:"22/06/22"
+   },
+   {
+    id:nanoid(),
+     text:"this is 5 note",
+     date:"22/06/22"
    }
 
 ]);
