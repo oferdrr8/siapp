@@ -28,7 +28,7 @@ code {
 
 .note.new{
   background-color: rgb(160, 216, 242);
-
+  white-space:per-warp;
 }
 
 textarea{
@@ -82,4 +82,14 @@ textarea:focus{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.devicon-codecov-plain{
+  cursor: pointer;
+}
+
+.devicon-codecov-plain:hover{
+  color: red;
+  font-size: 1.8rem;
+  background-color: #a2c5fa;
 }

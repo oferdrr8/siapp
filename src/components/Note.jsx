@@ -1,4 +1,4 @@
-const Note = ({id,text,date}) => {
+const Note = ({id,text,date , handeleDelete}) => {
     return(
 
 
@@ -9,8 +9,10 @@ const Note = ({id,text,date}) => {
 
 <div className="note-footer">
            <small>{date}</small>
-           <i className="fa-solid fa-trash-xmark mx-2 "></i>
-            <i className="devicon-codecov-plain mx-2"></i>
+           {/* <i className="fa-solid fa-trash-xmark mx-2 "></i> */}
+     <i className="devicon-codecov-plain mx-2" onClick={()=>{
+         handeleDelete(id)
+     }}></i>
 
 </div>
 </div>

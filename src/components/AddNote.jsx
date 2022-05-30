@@ -1,16 +1,26 @@
 import { useState } from "react";
-
+const charterLimit = 200;
 const AddNote =({handleAddNote}) =>{
 
     const [noteText , setNoteText] = useState('')
 
     const handeleChamge =(event) =>{
-          console.log (event.target.value);
-          setNoteText(event.target.value);
+
+          if(charterLimit - event.target.value.length >= 0){
+              setNoteText(event.target.value);
+          }
     };
 
     const handeleSaveClick = () =>{
-        handleAddNote(noteText)
+        if (noteText.trim().length >0)
+        {
+            handleAddNote(noteText);
+            setNoteText('');
+        }
+        else{
+               alert("Note does not contain text")  
+
+        }
     }
 
     return (
@@ -26,7 +36,7 @@ const AddNote =({handleAddNote}) =>{
 
 <div className="note-footer">
 
-<small> 200 Rrmaiming</small>
+<small> {charterLimit - noteText.length} Rrmaiming</small>
 <button className = "save" onClick={handeleSaveClick}>Save</button>
 </div>
 </div>
