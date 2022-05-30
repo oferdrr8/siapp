@@ -25,7 +25,7 @@ const AddNote =({handleAddNote}) =>{
 
     return (
 
-<div className="note new">
+<div className="note new col-8 m-auto ">
  <textarea
   rows="8" 
   cols="10" 
