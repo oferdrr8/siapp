@@ -3,7 +3,7 @@ import Note from "./Note";
 
 ;
 
-const NotesList =({notes})=>{
+const NotesList =({notes , handleAddNote})=>{
     return(
         <div className="container">
 
@@ -13,7 +13,7 @@ const NotesList =({notes})=>{
       ))}
 </div>
     
-<AddNote />
+<AddNote  handleAddNote={handleAddNote } />
         </div>
 
 );
