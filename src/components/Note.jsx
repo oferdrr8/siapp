@@ -9,10 +9,14 @@ const Note = ({id,text,date , handeleDelete}) => {
 
 <div className="note-footer fs-6">
            <small>{date}</small>
-           {/* <i className="fa-solid fa-trash-xmark mx-2 "></i> */}
-     <i className="devicon-codecov-plain mx-2" onClick={()=>{
+
+           <i class=" devicon-codecov-plain bi bi-trash3  mx-2"  onClick={()=>{
          handeleDelete(id)
      }}></i>
+
+     {/* <i className="devicon-codecov-plain mx-2" onClick={()=>{
+         handeleDelete(id)
+     }}></i> */}
 
 </div>
 </div>

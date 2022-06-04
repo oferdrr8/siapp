@@ -1,0 +1,111 @@
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .notes-list{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit ,minmax(50,1fr));
+    gap: 1em;
+  }
+  
+  .note.new{
+    background-color: rgb(160, 216, 242);
+    white-space:per-warp;
+  }
+  
+  textarea{
+    border: none;
+    resize: none;
+    background-color: rgb(160, 216, 242);
+  }
+  
+  textarea:focus{
+    outline: none;
+  
+  }
+  
+  
+  
+  .save {
+      box-shadow: 3px 4px 0px 0px #899599;
+      background-color:#ededed;
+      border-radius:15px;
+      border:1px solid #d6bcd6;
+      display:inline-block;
+      cursor:pointer;
+      color:#3a8a9e;
+      font-family:Arial;
+      font-size:17px;
+      padding:7px 25px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #e1e2ed;
+  }
+  .save:hover {
+      background-color:#f3d5f3;
+  }
+  .save:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .note{
+    background-color: rgb(233, 245, 127);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  
+  .note-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .devicon-codecov-plain{
+    cursor: pointer;
+  }
+  
+  .devicon-codecov-plain:hover{
+    color: red;
+    font-size: 1.8rem;
+    background-color: #a2c5fa;
+  }
+
+  .search{
+      align-self: center;
+      display: flex;
+      
+      align-items: center;
+      background-color: #e6f8f8;
+      border-radius: 25px;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+
+  }
+
+  .bi{
+      font-size: 1.3rem;
+      color: #6ef6f6;
+      align-items: center;
+      
+      
+  }
+
+  .search input{
+      border: none;
+      background-color: #e6f8f8;
+  }
+
+  .search input:focus{
+      outline: none;
+  }
+  
