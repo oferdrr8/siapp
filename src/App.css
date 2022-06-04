@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    min-height: 100vh;
   }
   
   .notes-list{
@@ -34,7 +35,7 @@
       box-shadow: 3px 4px 0px 0px #899599;
       background-color:#ededed;
       border-radius:15px;
-      border:1px solid #d6bcd6;
+      border:1px solid #f0d6f0;
       display:inline-block;
       cursor:pointer;
       color:#3a8a9e;
@@ -45,7 +46,7 @@
       text-shadow:0px 1px 0px #e1e2ed;
   }
   .save:hover {
-      background-color:#f3d5f3;
+      background-color:#a2c5fa;
   }
   .save:active {
       position:relative;
@@ -107,5 +108,22 @@
 
   .search input:focus{
       outline: none;
+  }
+
+  .header{
+      margin: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+  }
+
+  .dark-mode{
+      background-color: black;
+
+  }
+
+  .dark-mode h1{
+      color: #e6f8f8;
   }
   
